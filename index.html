@@ -4,11 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Jezki - Private expense evidence for iPhone</title>
-  <meta name="description" content="Jezki is the little hedgehog for your receipts. It gathers scattered expense proof — receipts, invoices, PDFs, screenshots, shared items — into reviewed records and clean export packs. Local-first and review-first by default.">
-  <meta name="theme-color" content="#f6efe2">
+  <meta name="description" content="Jezki turns receipt chaos into a small review queue: gather private expense evidence, check every suggestion, and export only what you approve.">
+  <meta name="theme-color" content="#f5fbff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#061326" media="(prefers-color-scheme: dark)">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Jezki - Private expense evidence for iPhone">
-  <meta property="og:description" content="The little hedgehog for your receipts. Gather scattered proof into reviewed records and clean export packs — local-first, review-first, nothing filed until you approve it.">
+  <meta property="og:title" content="Jezki - From receipt chaos to ready for review">
+  <meta property="og:description" content="Private expense evidence, ready for review. Jezki gathers the proof. You approve every detail.">
   <link rel="stylesheet" href="assets/styles.css">
   <link rel="icon" href="assets/jezki-icon.png">
 </head>
@@ -16,354 +17,170 @@
   <a class="skip-link" href="#main">Skip to content</a>
 
   <header class="site-header">
-    <div class="wrap">
+    <div class="wrap header-inner">
       <a class="brand" href="index.html" aria-label="Jezki home">
-        <svg class="logo" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <ellipse cx="21" cy="40.5" rx="12" ry="2.4" fill="#3c2d1e" opacity=".16"/>
-          <polygon points="10,32 7,20 16,29" fill="#3c2d1e"/>
-          <polygon points="15,30 14,16 23,27" fill="#4a3826"/>
-          <polygon points="22,27 23,13 31,26" fill="#3c2d1e"/>
-          <rect x="27.5" y="14" width="8.5" height="11" rx="1.5" transform="rotate(24 31.7 19.5)" fill="#f7e8cf" stroke="#d18a3a" stroke-width="1.3"/>
-          <line x1="30" y1="18.6" x2="35.2" y2="21" stroke="#d18a3a" stroke-width="1.1"/>
-          <line x1="29" y1="21" x2="34.2" y2="23.4" stroke="#d18a3a" stroke-width="1.1"/>
-          <path d="M9 33c0-8 6-14 14-14 5.6 0 9.6 2.7 12.6 6.6l6.2 3.1c1.2.6 1 2.4-.3 2.7l-6.6 1.3C33 37 28.8 39 23 39H13a4 4 0 0 1-4-4Z" fill="#6a5138"/>
-          <path d="M31 27c2.6.6 6 1.7 9.5 3.4-3.4 1-6.8 1.4-9.7 1.2-.7-1.5-.6-3.2.2-4.6Z" fill="#e8d5b3"/>
-          <circle cx="41.4" cy="30.9" r="1.6" fill="#a5324e"/>
-          <circle cx="30.5" cy="28.3" r="1.5" fill="#2b2018"/>
-          <path d="M15 39l1.4 3.4M22 39l1.4 3.4" stroke="#3c2d1e" stroke-width="2" stroke-linecap="round"/>
-        </svg>
-        <span class="wordmark">Jezki</span>
+        <img src="assets/jezki-icon.png" alt="" width="44" height="44">
+        <span>Jezki</span>
       </a>
       <nav class="nav" aria-label="Primary">
-        <a href="#product">Product</a>
-        <a href="privacy.html">Privacy</a>
+        <a href="#how-it-works">How it works</a>
+        <a href="#privacy">Privacy</a>
         <a href="support.html">Support</a>
       </nav>
     </div>
   </header>
 
   <main id="main">
-
-    <!-- Hero -->
-    <section class="hero band-full" aria-labelledby="hero-title">
-      <div class="wrap">
+    <section class="hero" aria-labelledby="hero-title">
+      <picture class="hero-media" aria-hidden="true">
+        <source srcset="assets/jezki-hero-night.png" media="(prefers-color-scheme: dark)">
+        <img src="assets/jezki-hero-day.png" alt="" width="1536" height="1024">
+      </picture>
+      <div class="hero-shade" aria-hidden="true"></div>
+      <div class="wrap hero-inner">
         <div class="hero-copy">
-          <p class="eyebrow">Local-first iPhone app for expense evidence</p>
-          <h1 id="hero-title">Gather the scattered.<br><span class="accent">Keep it private.</span></h1>
-          <p class="deck">Private expense evidence, ready for review.</p>
-          <p class="lede">Receipts, invoices, PDFs, screenshots, and selected shared items pile up everywhere. Jezki noses them out, tucks them together, and keeps them on your device — nothing filed until you approve it.</p>
+          <p class="eyebrow light">Private expense evidence for iPhone</p>
+          <h1 id="hero-title">Jezki</h1>
+          <p class="hero-promise">From receipt chaos to ready for review.</p>
+          <p class="hero-detail">Jezki gathers receipts, invoices, PDFs, screenshots, shared files, and manual entries into one small queue. You check every suggestion. Nothing is filed until you approve it.</p>
           <div class="hero-actions">
-            <a class="button primary" href="privacy.html">Read the privacy model</a>
-            <a class="button secondary" href="#loop">How Jezki works</a>
+            <a class="button primary" href="#how-it-works">See how Jezki works</a>
+            <a class="button glass" href="privacy.html">Read the privacy model</a>
           </div>
-          <p class="etymology"><span>Jezki — from <b>ježko</b>, Slavic for “little hedgehog.”</span> <span class="dot" aria-hidden="true">●</span> <span>It gathers, then guards.</span></p>
+          <p class="hero-note">Private expense evidence, ready for review.</p>
         </div>
-
-        <figure class="hero-art" role="img" aria-label="A hedgehog gathers scattered receipt, PDF, and screenshot slips from the ground onto its back, then leaves a tidy, reviewed export pack.">
-          <svg viewBox="0 0 480 380" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <ellipse cx="240" cy="330" rx="205" ry="26" fill="#e6dbc6"/>
-
-            <!-- scattered slips on the ground (left) -->
-            <g class="slip" style="--r:-15deg" transform="translate(34 250) rotate(-15)">
-              <rect width="72" height="92" rx="6" fill="#fffdf8" stroke="#d6c6a9" stroke-width="2"/>
-              <text x="12" y="24" font-family="-apple-system,Segoe UI,sans-serif" font-size="12" font-weight="700" fill="#855012">RECEIPT</text>
-              <line x1="12" y1="40" x2="60" y2="40" stroke="#e6dbc6" stroke-width="4"/>
-              <line x1="12" y1="54" x2="48" y2="54" stroke="#e6dbc6" stroke-width="4"/>
-              <line x1="12" y1="68" x2="56" y2="68" stroke="#e6dbc6" stroke-width="4"/>
-            </g>
-            <g class="slip" style="--r:9deg" transform="translate(120 268) rotate(9)">
-              <rect width="70" height="88" rx="6" fill="#fffdf8" stroke="#d6c6a9" stroke-width="2"/>
-              <text x="12" y="24" font-family="-apple-system,Segoe UI,sans-serif" font-size="12" font-weight="700" fill="#855012">PDF</text>
-              <line x1="12" y1="40" x2="58" y2="40" stroke="#e6dbc6" stroke-width="4"/>
-              <line x1="12" y1="54" x2="44" y2="54" stroke="#e6dbc6" stroke-width="4"/>
-            </g>
-            <g class="slip" style="--r:-6deg" transform="translate(70 210) rotate(-6)">
-              <rect width="64" height="80" rx="6" fill="#f7e8cf" stroke="#d18a3a" stroke-width="2"/>
-              <text x="11" y="23" font-family="-apple-system,Segoe UI,sans-serif" font-size="11" font-weight="700" fill="#855012">SCREENSHOT</text>
-              <rect x="11" y="34" width="42" height="30" rx="3" fill="#e0a75f" opacity=".5"/>
-            </g>
-
-            <!-- the hedgehog, ambling right, quills = slips -->
-            <g transform="translate(196 150)">
-              <!-- spines / quills -->
-              <polygon points="18,120 4,44 44,96" fill="#3c2d1e"/>
-              <polygon points="40,100 40,26 78,88" fill="#4a3826"/>
-              <polygon points="74,90 82,14 108,84" fill="#3c2d1e"/>
-              <polygon points="104,86 122,20 140,82" fill="#4a3826"/>
-              <!-- a couple of quills are paper slips -->
-              <g transform="translate(126 22) rotate(20)">
-                <rect width="30" height="40" rx="4" fill="#fffdf8" stroke="#d6c6a9" stroke-width="2"/>
-                <line x1="6" y1="12" x2="24" y2="12" stroke="#e6dbc6" stroke-width="3"/>
-                <line x1="6" y1="21" x2="20" y2="21" stroke="#e6dbc6" stroke-width="3"/>
-              </g>
-              <g transform="translate(150 44) rotate(34)">
-                <rect width="28" height="38" rx="4" fill="#f7e8cf" stroke="#d18a3a" stroke-width="2"/>
-                <path d="M7 14h14M7 22h10" stroke="#d18a3a" stroke-width="2.4" stroke-linecap="round"/>
-              </g>
-              <!-- body -->
-              <path d="M10 118c0-46 34-80 80-80 32 0 55 15 72 38l35 17c7 3.4 5.6 13.6-1.8 15.2l-37 7.6C221 152 197 164 156 164H34a24 24 0 0 1-24-24Z" fill="#6a5138"/>
-              <!-- face / snout -->
-              <path d="M176 120c15 3.4 34 9.6 54 19.4-19 5.6-38 8-55 6.6-4-8.6-3.4-18.4 1-26Z" fill="#e8d5b3"/>
-              <circle cx="232" cy="140" r="6.5" fill="#a5324e"/>
-              <circle cx="176" cy="126" r="6" fill="#2b2018"/>
-              <path d="M181 122a5 5 0 0 1 5-3" stroke="#fffdf8" stroke-width="1.6" stroke-linecap="round" opacity=".7"/>
-              <!-- little cheek -->
-              <ellipse cx="150" cy="150" rx="11" ry="7" fill="#c98f88" opacity=".4"/>
-              <!-- feet -->
-              <path d="M60 164l7 16M110 164l7 16" stroke="#3c2d1e" stroke-width="8" stroke-linecap="round"/>
-            </g>
-
-            <!-- tidy reviewed export pack ahead (right) -->
-            <g transform="translate(372 214)">
-              <rect x="-4" y="10" width="86" height="104" rx="10" fill="#efe4d1" stroke="#d6c6a9" stroke-width="2"/>
-              <rect width="86" height="104" rx="10" fill="#fffdf8" stroke="#d18a3a" stroke-width="2.4"/>
-              <path d="M0 30h86" stroke="#f0dcbb" stroke-width="2"/>
-              <circle cx="43" cy="15" r="9" fill="#234339"/>
-              <path d="M39 15l3 3 5-6" stroke="#eef3ec" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-              <text x="43" y="58" text-anchor="middle" font-family="-apple-system,Segoe UI,sans-serif" font-size="12" font-weight="800" fill="#855012">EXPORT</text>
-              <text x="43" y="74" text-anchor="middle" font-family="-apple-system,Segoe UI,sans-serif" font-size="12" font-weight="800" fill="#855012">PACK</text>
-              <line x1="16" y1="90" x2="70" y2="90" stroke="#e6dbc6" stroke-width="4"/>
-            </g>
-
-            <!-- motion dots -->
-            <path d="M300 300q40-16 70-40" stroke="#d18a3a" stroke-width="3" stroke-linecap="round" stroke-dasharray="1 12" opacity=".7"/>
-          </svg>
-        </figure>
       </div>
     </section>
 
-    <!-- Loop -->
-    <section class="section band-full" id="loop" aria-labelledby="loop-title">
-      <div class="wrap">
-        <div class="section-head">
-          <p class="eyebrow">How Jezki gathers</p>
-          <h2 id="loop-title">Proof comes in messy. Jezki keeps it calm.</h2>
-          <p>It keeps the original evidence, suggests useful fields, and waits for your review before anything becomes a record.</p>
-        </div>
-        <div class="steps">
-          <div class="step">
-            <span class="spine" aria-hidden="true">1</span>
-            <h3>Gather</h3>
-            <p>Add proof from camera, document scan, Photos, Files, the share sheet, or by hand. Jezki keeps the original.</p>
-          </div>
-          <div class="step">
-            <span class="spine" aria-hidden="true">2</span>
-            <h3>Sniff out fields</h3>
-            <p>Where it can, Jezki suggests likely fields and a category. Suggestions, never decisions.</p>
-          </div>
-          <div class="step">
-            <span class="spine" aria-hidden="true">3</span>
-            <h3>You review</h3>
-            <p>Every possible record waits in review. Confirm, edit, merge a possible duplicate, or dismiss it.</p>
-          </div>
-          <div class="step">
-            <span class="spine" aria-hidden="true">4</span>
-            <h3>Tuck it away</h3>
-            <p>Approved records become a tidy, accountant-ready export pack — when you choose.</p>
-          </div>
-        </div>
-        <p class="loop-note">A hedgehog never rushes. Jezki creates candidates and waits — <b>nothing is filed until you approve it.</b></p>
-      </div>
-    </section>
-
-    <!-- Sources -->
-    <section class="section alt band-full" id="product" aria-labelledby="handles-title">
-      <div class="wrap">
-        <div class="section-head">
-          <p class="eyebrow">What Jezki gathers</p>
-          <h2 id="handles-title">One quiet burrow for scattered proof.</h2>
-          <p>Bring the evidence you already have. Jezki organises it into records you can review and export.</p>
-        </div>
-        <div class="sources">
-          <div class="source">
-            <svg class="ic" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 3h9l3 3v13l-2-1.4L13 19l-2-1.4L9 19l-2-1.4L5 19V4a1 1 0 0 1 1-1Z" stroke="#6a5138" stroke-width="1.6" stroke-linejoin="round"/><path d="M8 8h6M8 11h6M8 14h4" stroke="#6a5138" stroke-width="1.6" stroke-linecap="round"/></svg>
-            <div><h3>Receipts &amp; invoices</h3><p>Paper receipts, scanned invoices, and printed proof of purchase.</p></div>
-          </div>
-          <div class="source">
-            <svg class="ic" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 2h7l5 5v13a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2Z" stroke="#6a5138" stroke-width="1.6" stroke-linejoin="round"/><path d="M14 2v5h5" stroke="#6a5138" stroke-width="1.6" stroke-linejoin="round"/><text x="12" y="18" text-anchor="middle" font-family="sans-serif" font-size="6" font-weight="800" fill="#6a5138">PDF</text></svg>
-            <div><h3>PDFs &amp; files</h3><p>Statements, invoices, and documents imported from Files.</p></div>
-          </div>
-          <div class="source">
-            <svg class="ic" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" stroke="#6a5138" stroke-width="1.6"/><circle cx="8.5" cy="10" r="1.7" stroke="#6a5138" stroke-width="1.4"/><path d="M4 17l5-4 4 3 3-2 4 3" stroke="#6a5138" stroke-width="1.6" stroke-linejoin="round"/></svg>
-            <div><h3>Screenshots &amp; photos</h3><p>Photos and screenshots you choose to add from your library.</p></div>
-          </div>
-          <div class="source">
-            <svg class="ic" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="6" cy="12" r="2.6" stroke="#6a5138" stroke-width="1.6"/><circle cx="18" cy="6" r="2.6" stroke="#6a5138" stroke-width="1.6"/><circle cx="18" cy="18" r="2.6" stroke="#6a5138" stroke-width="1.6"/><path d="M8.3 10.8l7.4-3.6M8.3 13.2l7.4 3.6" stroke="#6a5138" stroke-width="1.6"/></svg>
-            <div><h3>Shared items</h3><p>Send proof to Jezki through the iOS share sheet.</p></div>
-          </div>
-          <div class="source">
-            <svg class="ic" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke="#6a5138" stroke-width="1.6"/><path d="M12 8v8M8 12h8" stroke="#6a5138" stroke-width="1.8" stroke-linecap="round"/></svg>
-            <div><h3>Manual entries</h3><p>Add a purchase by hand when you do not have a document.</p></div>
-          </div>
-          <div class="source">
-            <svg class="ic" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke="#6a5138" stroke-width="1.6"/><path d="M8 12.5l2.6 2.6L16 9.5" stroke="#6a5138" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            <div><h3>Reviewed records</h3><p>Approved records with source provenance, ready for export.</p></div>
-          </div>
-        </div>
-        <p class="fineprint">Selected email evidence is supported in current builds through Gmail test mode only. Production Gmail stays unavailable until Google OAuth verification, security review, final privacy copy, and owner approval are complete.</p>
-      </div>
-    </section>
-
-    <!-- Protective privacy band -->
-    <section class="protect band-full" aria-labelledby="privacy-title">
-      <div class="wrap">
+    <section class="section intro" id="how-it-works" aria-labelledby="intro-title">
+      <div class="wrap split-intro">
         <div>
-          <p class="eyebrow on-pine">Local-First By Default</p>
-          <h2 id="privacy-title">It curls up around your evidence.</h2>
-          <p class="band-lede">A hedgehog’s first instinct is to protect what it carries. Jezki keeps your evidence on device by default, waits for your approval before filing anything, and only lets a pack leave when you send it.</p>
-          <ul class="assurances">
-            <li>
-              <svg class="tick" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.6"/><path d="M8 12.5l2.6 2.6L16 9.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              <div><strong>Local-first by default</strong><span>Current builds do not upload expense evidence to a Jezki backend by default.</span></div>
-            </li>
-            <li>
-              <svg class="tick" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.6"/><path d="M8 12.5l2.6 2.6L16 9.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              <div><strong>You choose the sources</strong><span>Nothing is captured unless you add it. Original evidence stays connected to the record you approve.</span></div>
-            </li>
-            <li>
-              <svg class="tick" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.6"/><path d="M8 12.5l2.6 2.6L16 9.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              <div><strong>Review before records</strong><span>Possible records enter review. Nothing is filed until you approve it.</span></div>
-            </li>
-            <li>
-              <svg class="tick" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.6"/><path d="M8 12.5l2.6 2.6L16 9.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              <div><strong>No tracking or advertising</strong><span>No third-party advertising or tracking. Exports and shares are user-initiated.</span></div>
-            </li>
-          </ul>
+          <p class="eyebrow">A calmer middle</p>
+          <h2 id="intro-title">Proof arrives messy. Decisions should not.</h2>
         </div>
-        <div class="protect-art" aria-hidden="true">
-          <svg viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="150" cy="150" r="120" fill="#2d5245"/>
-            <circle cx="150" cy="150" r="120" stroke="#3d6153" stroke-width="2"/>
-            <!-- curled hedgehog: protected slips inside a ring of quills -->
-            <g>
-              <!-- radiating quills -->
-              <g stroke="#1c352c" stroke-width="7" stroke-linecap="round">
-                <path d="M150 44V16"/><path d="M197 54l14-24"/><path d="M234 88l24-14"/>
-                <path d="M248 138l27-6"/><path d="M246 190l26 9"/><path d="M214 231l18 21"/>
-                <path d="M170 250l7 27"/><path d="M124 250l-7 27"/><path d="M86 231l-18 21"/>
-                <path d="M54 190l-26 9"/><path d="M52 138l-27-6"/><path d="M66 88L42 74"/>
-                <path d="M103 54L89 30"/>
-              </g>
-              <g stroke="#274b3f" stroke-width="6" stroke-linecap="round">
-                <path d="M174 47l9-25"/><path d="M124 47l-9-25"/><path d="M218 72l21-18"/>
-                <path d="M82 72L61 54"/><path d="M243 112l25-11"/><path d="M57 112L32 101"/>
-                <path d="M250 165l27 2"/><path d="M50 165l-27 2"/><path d="M232 212l22 16"/>
-                <path d="M68 212l-22 16"/><path d="M194 242l12 24"/><path d="M106 242l-12 24"/>
-              </g>
-              <!-- the ball -->
-              <circle cx="150" cy="150" r="86" fill="#6a5138"/>
-              <circle cx="150" cy="150" r="86" fill="#3c2d1e" opacity=".2"/>
-              <!-- tucked-away slips -->
-              <g transform="translate(150 150)">
-                <rect x="-40" y="-30" width="42" height="54" rx="5" fill="#fffdf8" transform="rotate(-12)" opacity=".95"/>
-                <rect x="-6" y="-34" width="42" height="54" rx="5" fill="#f7e8cf" transform="rotate(8)" opacity=".95"/>
-                <rect x="-22" y="-18" width="42" height="54" rx="5" fill="#fffdf8" transform="rotate(-2)"/>
-                <path d="M-14 8l7 7 13-15" stroke="#234339" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
-              </g>
-              <!-- peeking face -->
-              <path d="M92 150c-14 4-28 4-40-1 3-9 12-15 22-15 8 0 15 6 18 16Z" fill="#e8d5b3"/>
-              <circle cx="66" cy="146" r="4.6" fill="#2b2018"/>
-              <circle cx="52" cy="150" r="3.4" fill="#a5324e"/>
-            </g>
-          </svg>
-        </div>
+        <p class="section-lede">Jezki keeps the original evidence, suggests the useful parts, and puts each possible record in front of you. Swipe right to approve, left to dismiss, or open the details when something needs care.</p>
       </div>
     </section>
 
-    <!-- Export -->
-    <section class="section band-full" aria-labelledby="export-title">
-      <div class="wrap">
-        <div class="export-grid">
-          <div class="export-copy">
-            <p class="eyebrow">Accountant-ready exports</p>
-            <h2 id="export-title">When it’s time, hand over a tidy pack.</h2>
-            <p>Jezki can build an accountant-ready export pack from the records you approved — reviewed fields, a readable summary, a manifest, and the original evidence, bundled together.</p>
-            <ul class="pack-list">
-              <li><span class="tag">CSV</span> Reviewed records and fields</li>
-              <li><span class="tag">PDF</span> A readable summary</li>
-              <li><span class="tag">Manifest</span> What is inside the pack</li>
-              <li><span class="tag">Bundle</span> The original evidence you approved</li>
-            </ul>
+    <section class="section workflow" aria-label="Jezki workflow">
+      <div class="wrap workflow-grid">
+        <article class="workflow-step gather-step">
+          <span class="step-number">01</span>
+          <p class="step-kicker">Gather</p>
+          <h3>Everything finds one place.</h3>
+          <p>Scan a document, snap a receipt, import from Photos or Files, check the share sheet, or add proof by hand.</p>
+        </article>
+        <article class="workflow-step review-step">
+          <span class="step-number">02</span>
+          <p class="step-kicker">Review</p>
+          <h3>A tiny queue, not another inbox.</h3>
+          <p>Merchant, date, amount, tax, and category stay suggestions until you approve them. Possible duplicates can be fixed or merged.</p>
+          <div class="swipe-cue" aria-label="Swipe right to approve, swipe left to dismiss">
+            <span class="dismiss-cue">Dismiss</span>
+            <span class="receipt-card">AUD 72.40<br><small>Travel kiosk</small></span>
+            <span class="approve-cue">Approve</span>
           </div>
-          <div class="export-art" aria-hidden="true">
-            <svg viewBox="0 0 320 300" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <ellipse cx="160" cy="272" rx="120" ry="18" fill="#efe4d1"/>
-              <rect x="70" y="70" width="180" height="170" rx="16" fill="#efe4d1" stroke="#d6c6a9" stroke-width="2"/>
-              <rect x="56" y="56" width="180" height="170" rx="16" fill="#fffdf8" stroke="#d18a3a" stroke-width="2.6"/>
-              <path d="M56 96h180" stroke="#f0dcbb" stroke-width="2"/>
-              <path d="M56 96h180M146 56v40" stroke="#f0dcbb" stroke-width="2"/>
-              <path d="M146 56l90 40" stroke="#f0dcbb" stroke-width="0"/>
-              <!-- ribbon -->
-              <path d="M146 56v170" stroke="#e0a75f" stroke-width="10" opacity=".5"/>
-              <circle cx="146" cy="76" r="17" fill="#234339"/>
-              <path d="M139 76l5 5 9-11" stroke="#eef3ec" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-              <text x="112" y="150" text-anchor="middle" font-family="-apple-system,Segoe UI,sans-serif" font-size="13" font-weight="800" fill="#855012">CSV</text>
-              <text x="180" y="150" text-anchor="middle" font-family="-apple-system,Segoe UI,sans-serif" font-size="13" font-weight="800" fill="#855012">PDF</text>
-              <line x1="82" y1="186" x2="210" y2="186" stroke="#e6dbc6" stroke-width="5"/>
-              <line x1="82" y1="202" x2="176" y2="202" stroke="#e6dbc6" stroke-width="5"/>
-            </svg>
-          </div>
-        </div>
+        </article>
+        <article class="workflow-step export-step">
+          <span class="step-number">03</span>
+          <p class="step-kicker">Export</p>
+          <h3>Only reviewed proof leaves the burrow.</h3>
+          <p>Create an accountant-ready pack from records you have approved, then choose where to share it.</p>
+        </article>
       </div>
     </section>
 
-    <!-- Boundary -->
-    <section class="boundary band-full" aria-labelledby="boundary-title">
-      <div class="wrap">
-        <p class="eyebrow">Where Jezki stops</p>
-        <p class="lead" id="boundary-title">Jezki does not provide tax advice, decide deductibility, guarantee savings, take the place of an accountant, or file records on its own.</p>
-        <p class="small">It organises evidence so a person can review it. Jezki suggests useful fields; you decide what becomes a record. It does not claim approval from any tax authority.</p>
-      </div>
-    </section>
-
-    <!-- Callout -->
-    <section class="section alt band-full" aria-labelledby="help-title">
+    <section class="section sources" aria-labelledby="sources-title">
       <div class="wrap">
         <div class="section-head">
-          <p class="eyebrow">Support &amp; privacy</p>
-          <h2 id="help-title">Two plain pages, no surprises.</h2>
+          <p class="eyebrow">Built for real-world mess</p>
+          <h2 id="sources-title">If it proves an expense, it belongs in the queue.</h2>
+          <p>Jezki is designed around the places evidence actually hides, without pretending every document arrives neatly.</p>
         </div>
-        <div class="callout">
-          <a href="support.html">
-            <h3>Support</h3>
-            <p>Help with local data, exports, source controls, and the current owner-review support contact status.</p>
-            <span class="more">Get support →</span>
-          </a>
-          <a href="privacy.html">
-            <h3>Privacy</h3>
-            <p>Local-first storage, review before records, no tracking, deletion controls, and future changes.</p>
-            <span class="more">Read the privacy policy →</span>
-          </a>
+        <div class="source-list">
+          <article><span>Camera</span><h3>Receipts and invoices</h3><p>Quick photos and document scans with the original saved first.</p></article>
+          <article><span>Files</span><h3>PDFs and documents</h3><p>Local text extraction and on-device OCR create suggestions for review.</p></article>
+          <article><span>Photos</span><h3>Screenshots and images</h3><p>Choose exactly what Jezki may inspect from your library.</p></article>
+          <article><span>Share sheet</span><h3>Proof from other apps</h3><p>Send a file to Jezki without breaking your current workflow.</p></article>
+          <article><span>Manual</span><h3>Anything unusual</h3><p>Type the details when the evidence does not fit a familiar shape.</p></article>
+          <article><span>Inbox discovery</span><h3>A future TripIt-like flow</h3><p>With explicit permission, likely invoices could enter Review. Current builds use Gmail test mode only.</p></article>
         </div>
       </div>
     </section>
 
+    <section class="privacy-band" id="privacy" aria-labelledby="privacy-title">
+      <div class="wrap privacy-grid">
+        <div>
+          <p class="eyebrow light">Local-First By Default</p>
+          <h2 id="privacy-title">Your paperwork is private. Jezki behaves like it.</h2>
+          <p>Current builds keep evidence and review metadata on your device by default. There is no account requirement, advertising profile, or silent filing path.</p>
+          <a class="text-link light-link" href="privacy.html">Read the complete privacy policy</a>
+        </div>
+        <ul class="privacy-list">
+          <li><strong>You choose what enters.</strong><span>Camera, Photos, Files, shared items, and source access remain permission-led.</span></li>
+          <li><strong>You approve every record.</strong><span>Suggestions wait in Review. Jezki never decides on your behalf.</span></li>
+          <li><strong>You choose what leaves.</strong><span>Exports are created and shared only when you ask.</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section boundary" aria-labelledby="boundary-title">
+      <div class="wrap boundary-grid">
+        <div>
+          <p class="eyebrow">Clear boundaries</p>
+          <h2 id="boundary-title">Helpful, never overconfident.</h2>
+        </div>
+        <div>
+          <p>Jezki organises private expense evidence and suggests fields for your review. It <strong>does not provide tax advice</strong>, decide what can be deducted, take the place of an accountant or adviser, validate records with a tax authority, guarantee savings, or file records on its own.</p>
+          <p>Production Gmail access, final support contact details, and final public URLs remain gated until the required verification and owner approval are complete.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section faq" id="faq" aria-labelledby="faq-title">
+      <div class="wrap faq-grid">
+        <div>
+          <p class="eyebrow">First questions</p>
+          <h2 id="faq-title">The useful answers, up front.</h2>
+        </div>
+        <div class="faq-list">
+          <details><summary>Does Jezki need an account?</summary><p>No. The current app is designed to work locally without a mandatory account or backend service.</p></details>
+          <details><summary>Can Jezki read my email?</summary><p>Current builds use a local Gmail test mode only. Any future production inbox discovery must be optional, transparent, pausable, disconnectable, and verified before release.</p></details>
+          <details><summary>Does Jezki file expenses for me?</summary><p>No. Every possible record waits for your review, and exports happen only when you create and share them.</p></details>
+          <details><summary>Where can I get support?</summary><p>The owner-approved support destination is still pending. The support page documents the available in-app controls and current boundaries.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing" aria-labelledby="closing-title">
+      <picture aria-hidden="true">
+        <source srcset="assets/jezki-hero-night.png" media="(prefers-color-scheme: dark)">
+        <img src="assets/jezki-hero-day.png" alt="" width="1536" height="1024">
+      </picture>
+      <div class="closing-shade" aria-hidden="true"></div>
+      <div class="wrap closing-copy">
+        <p class="eyebrow light">Meet the queue keeper</p>
+        <h2 id="closing-title">Jezki gathers the proof.<br>You review every detail.</h2>
+        <a class="button primary" href="support.html">Explore support</a>
+      </div>
+    </section>
   </main>
 
   <footer class="site-footer">
-    <div class="wrap">
+    <div class="wrap footer-grid">
       <div>
-        <span class="footer-brand">
-          <svg class="logo" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <polygon points="10,32 7,20 16,29" fill="#3c2d1e"/>
-            <polygon points="15,30 14,16 23,27" fill="#4a3826"/>
-            <polygon points="22,27 23,13 31,26" fill="#3c2d1e"/>
-            <rect x="27.5" y="14" width="8.5" height="11" rx="1.5" transform="rotate(24 31.7 19.5)" fill="#f7e8cf" stroke="#d18a3a" stroke-width="1.3"/>
-            <path d="M9 33c0-8 6-14 14-14 5.6 0 9.6 2.7 12.6 6.6l6.2 3.1c1.2.6 1 2.4-.3 2.7l-6.6 1.3C33 37 28.8 39 23 39H13a4 4 0 0 1-4-4Z" fill="#6a5138"/>
-            <path d="M31 27c2.6.6 6 1.7 9.5 3.4-3.4 1-6.8 1.4-9.7 1.2-.7-1.5-.6-3.2.2-4.6Z" fill="#e8d5b3"/>
-            <circle cx="41.4" cy="30.9" r="1.6" fill="#a5324e"/>
-            <circle cx="30.5" cy="28.3" r="1.5" fill="#2b2018"/>
-          </svg>
-          <span class="wordmark">Jezki</span>
-        </span>
-        <p class="footer-tagline">The little hedgehog for your receipts. <em>Local-first, review-first, and calm about it.</em></p>
+        <a class="brand footer-brand" href="index.html" aria-label="Jezki home">
+          <img src="assets/jezki-icon.png" alt="" width="44" height="44">
+          <span>Jezki</span>
+        </a>
+        <p>From receipt chaos to ready for review.</p>
       </div>
-      <nav class="footer-links" aria-label="Footer">
-        <a href="#product">Product</a>
-        <a href="support.html">Support</a>
+      <nav aria-label="Footer">
+        <a href="#how-it-works">How it works</a>
         <a href="privacy.html">Privacy</a>
+        <a href="support.html">Support</a>
       </nav>
-      <p class="footer-note">Owner-review material. Final support contact destination and production URLs remain pending owner approval.</p>
+      <p class="footer-note">Owner-review material. Final support destination, hosted text, and production URL remain pending owner approval.</p>
     </div>
   </footer>
 </body>
