@@ -3,14 +3,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Jezki - Private expense evidence for iPhone</title>
-  <meta name="description" content="Jezki turns receipt chaos into a small review queue: gather private expense evidence, check every suggestion, and export only what you approve.">
-  <meta name="theme-color" content="#f5fbff" media="(prefers-color-scheme: light)">
-  <meta name="theme-color" content="#061326" media="(prefers-color-scheme: dark)">
+  <title>Jezki - Snap, sort, and send business receipts</title>
+  <meta name="description" content="Jezki is the easy iPhone app for snapping, sorting, and sending business receipts and invoices to your accountant.">
+  <meta name="theme-color" content="#061326">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Jezki - From receipt chaos to ready for review">
-  <meta property="og:description" content="Private expense evidence, ready for review. Jezki gathers the proof. You approve every detail.">
-  <link rel="stylesheet" href="assets/styles.css">
+  <meta property="og:title" content="Jezki - Snap it. Sort it. Send it.">
+  <meta property="og:description" content="A fun, simple way to turn receipt chaos into cleaner records for your accountant.">
+  <link rel="stylesheet" href="assets/styles.css?v=20260711-1">
   <link rel="icon" href="assets/jezki-icon.png">
 </head>
 <body>
@@ -23,7 +22,7 @@
         <span>Jezki</span>
       </a>
       <nav class="nav" aria-label="Primary">
-        <a href="#how-it-works">How it works</a>
+        <a href="#screens">See the app</a>
         <a href="#privacy">Privacy</a>
         <a href="support.html">Support</a>
       </nav>
@@ -33,20 +32,52 @@
   <main id="main">
     <section class="hero" aria-labelledby="hero-title">
       <picture class="hero-media" aria-hidden="true">
+        <source srcset="assets/jezki-hero-wide-night.png" media="(max-width: 700px)">
         <source srcset="assets/jezki-hero-wide-night.png" media="(prefers-color-scheme: dark)">
         <img src="assets/jezki-hero-wide-day.png" alt="" width="1920" height="1080">
       </picture>
       <div class="wrap hero-inner">
         <div class="hero-copy">
-          <p class="eyebrow light">Private expense evidence for iPhone</p>
+          <p class="eyebrow light">For messy receipt people</p>
           <h1 id="hero-title">Jezki</h1>
-          <p class="hero-promise">From receipt chaos to ready for review.</p>
-          <p class="hero-detail">Jezki gathers receipts, invoices, PDFs, screenshots, shared files, and manual entries into one small queue. You check every suggestion. Nothing is filed until you approve it.</p>
+          <p class="hero-promise">Snap it. Sort it. Send it.</p>
+          <p class="hero-detail">The easy way to turn receipt chaos into cleaner records for your accountant, without becoming a spreadsheet person.</p>
           <div class="hero-actions">
-            <a class="button primary" href="#how-it-works">See how Jezki works</a>
-            <a class="button glass" href="privacy.html">Read the privacy model</a>
+            <a class="store-link" id="app-store" href="#app-store" aria-label="Jezki for iPhone. App Store link coming soon.">
+              <img src="assets/jezki-icon.png" alt="" width="48" height="48">
+              <span><small>Download on the</small><strong>App Store</strong><em>Coming soon</em></span>
+            </a>
+            <a class="button glass" href="#screens">See the app</a>
           </div>
-          <p class="hero-note">Private expense evidence, ready for review.</p>
+          <p class="hero-note">Tax-time help for people who do not dream in spreadsheets.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="app-showcase" id="screens" aria-labelledby="showcase-title">
+      <div class="wrap">
+        <div class="showcase-head">
+          <p class="eyebrow light">The receipt app for real life</p>
+          <h2 id="showcase-title">Swipe right on receipt chaos.</h2>
+          <p>Jezki reads the basics, suggests a category, and lines everything up for you to check. A few quick swipes now beats a shoebox panic later.</p>
+        </div>
+        <div class="screen-row" aria-label="Jezki app screens">
+          <figure>
+            <img src="assets/app-home-dark.png" alt="Jezki home screen with the review queue and six ways to gather proof" width="590" height="1277" loading="lazy">
+            <figcaption>Snap</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/app-review-dark.png" alt="Jezki review screen showing an expense candidate ready to approve or fix" width="590" height="1277" loading="lazy">
+            <figcaption>Sort</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/app-records-dark.png" alt="Jezki records screen with search, category filters, and reviewed totals" width="590" height="1277" loading="lazy">
+            <figcaption>Find</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/app-exports-dark.png" alt="Jezki export screen preparing reviewed records for an accountant" width="590" height="1277" loading="lazy">
+            <figcaption>Send</figcaption>
+          </figure>
         </div>
       </div>
     </section>
@@ -54,10 +85,10 @@
     <section class="section intro" id="how-it-works" aria-labelledby="intro-title">
       <div class="wrap split-intro">
         <div>
-          <p class="eyebrow">A calmer middle</p>
-          <h2 id="intro-title">Proof arrives messy. Decisions should not.</h2>
+          <p class="eyebrow">Made for real life</p>
+          <h2 id="intro-title">Messy is a personality. It does not have to be a tax strategy.</h2>
         </div>
-        <p class="section-lede">Jezki keeps the original evidence, suggests the useful parts, and puts each possible record in front of you. Swipe right to approve, left to dismiss, or open the details when something needs care.</p>
+        <p class="section-lede">Jezki is for busy people, number-avoiders, tech beginners, and anyone whose filing system includes the glovebox.</p>
       </div>
     </section>
 
@@ -65,135 +96,72 @@
       <div class="wrap workflow-grid">
         <article class="workflow-step gather-step">
           <span class="step-number">01</span>
-          <p class="step-kicker">Gather</p>
-          <h3>Everything finds one place.</h3>
-          <p>Scan a document, snap a receipt, import from Photos or Files, check the share sheet, or add proof by hand.</p>
+          <p class="step-kicker">Snap</p>
+          <h3>Catch it before it disappears.</h3>
+          <p>Photograph the receipt before it fades, vanishes, or joins the car-floor ecosystem.</p>
         </article>
         <article class="workflow-step review-step">
           <span class="step-number">02</span>
-          <p class="step-kicker">Review</p>
-          <h3>A tiny queue, not another inbox.</h3>
-          <p>Merchant, date, amount, tax, and category stay suggestions until you approve them. Possible duplicates can be fixed or merged.</p>
-          <div class="swipe-cue" aria-label="Swipe right to approve, swipe left to dismiss">
-            <span class="dismiss-cue">Dismiss</span>
-            <span class="receipt-card">AUD 72.40<br><small>Travel kiosk</small></span>
-            <span class="approve-cue">Approve</span>
-          </div>
+          <p class="step-kicker">Sort</p>
+          <h3>Let Jezki read the boring bits.</h3>
+          <p>Merchant, date, amount, and a possible category are lined up for a quick check.</p>
         </article>
         <article class="workflow-step export-step">
           <span class="step-number">03</span>
-          <p class="step-kicker">Export</p>
-          <h3>Only reviewed proof leaves the burrow.</h3>
-          <p>Create an accountant-ready pack from records you have approved, then choose where to share it.</p>
+          <p class="step-kicker">Send</p>
+          <h3>Give your accountant something useful.</h3>
+          <p>Export a cleaner pack when they ask the question you knew was coming.</p>
         </article>
       </div>
     </section>
 
-    <section class="app-showcase" aria-labelledby="showcase-title">
-      <div class="wrap showcase-grid">
-        <div class="showcase-copy">
-          <p class="eyebrow light">Made for the moment after capture</p>
-          <h2 id="showcase-title">A clear place for the paperwork you meant to sort.</h2>
-          <p>Gather proof in seconds, make the decision while it is still fresh, and find reviewed records without digging through another crowded folder.</p>
-          <ul class="showcase-points">
-            <li><strong>Gather</strong><span>Camera, scan, Photos, Files, sharing, or a quick manual entry.</span></li>
-            <li><strong>Decide</strong><span>Approve, dismiss, or fix the details before anything becomes a record.</span></li>
-            <li><strong>Find</strong><span>Search and filter the evidence you have already reviewed.</span></li>
-          </ul>
-        </div>
-        <div class="screen-row" aria-label="Jezki app screens">
-          <figure>
-            <img src="assets/app-home-dark.png" alt="Jezki home screen with the review queue and six ways to gather proof" width="590" height="1277" loading="lazy">
-            <figcaption>Gather</figcaption>
-          </figure>
-          <figure>
-            <img src="assets/app-review-dark.png" alt="Jezki review screen showing an expense candidate ready to approve or fix" width="590" height="1277" loading="lazy">
-            <figcaption>Review</figcaption>
-          </figure>
-          <figure>
-            <img src="assets/app-records-dark.png" alt="Jezki records screen with search, category filters, and reviewed totals" width="590" height="1277" loading="lazy">
-            <figcaption>Records</figcaption>
-          </figure>
-        </div>
-      </div>
-    </section>
-
-    <section class="section sources" aria-labelledby="sources-title">
-      <div class="wrap">
-        <div class="section-head">
-          <p class="eyebrow">Built for real-world mess</p>
-          <h2 id="sources-title">If it proves an expense, it belongs in the queue.</h2>
-          <p>Jezki is designed around the places evidence actually hides, without pretending every document arrives neatly.</p>
-        </div>
-        <div class="source-list">
-          <article><span>Camera</span><h3>Receipts and invoices</h3><p>Quick photos and document scans with the original saved first.</p></article>
-          <article><span>Files</span><h3>PDFs and documents</h3><p>Local text extraction and on-device OCR create suggestions for review.</p></article>
-          <article><span>Photos</span><h3>Screenshots and images</h3><p>Choose exactly what Jezki may inspect from your library.</p></article>
-          <article><span>Share sheet</span><h3>Proof from other apps</h3><p>Send a file to Jezki without breaking your current workflow.</p></article>
-          <article><span>Manual</span><h3>Anything unusual</h3><p>Type the details when the evidence does not fit a familiar shape.</p></article>
-          <article><span>Inbox discovery</span><h3>A future TripIt-like flow</h3><p>With explicit permission, likely invoices could enter Review. Current builds use Gmail test mode only.</p></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="privacy-band" id="privacy" aria-labelledby="privacy-title">
+    <section class="privacy-band tax-band" aria-labelledby="tax-title">
       <div class="wrap privacy-grid">
         <div>
-          <p class="eyebrow light">Local-First By Default</p>
-          <h2 id="privacy-title">Your paperwork is private. Jezki behaves like it.</h2>
-          <p>Current builds keep evidence and review metadata on your device by default. There is no account requirement, advertising profile, or silent filing path.</p>
-          <a class="text-link light-link" href="privacy.html">Read the complete privacy policy</a>
+          <p class="eyebrow light">Keep the evidence</p>
+          <h2 id="tax-title">Do not let a missing receipt decide tax time.</h2>
+          <p>Jezki keeps the original receipt and your review trail together, so your accountant has more to work with and your disorganisation gets less of a vote.</p>
         </div>
         <ul class="privacy-list">
-          <li><strong>You choose what enters.</strong><span>Camera, Photos, Files, shared items, and source access remain permission-led.</span></li>
-          <li><strong>You approve every record.</strong><span>Suggestions wait in Review. Jezki never decides on your behalf.</span></li>
-          <li><strong>You choose what leaves.</strong><span>Exports are created and shared only when you ask.</span></li>
+          <li><strong>Keep the photo.</strong><span>The original receipt stays attached.</span></li>
+          <li><strong>Find it fast.</strong><span>No more bag, inbox, and glovebox archaeology.</span></li>
+          <li><strong>Send a cleaner pack.</strong><span>Your accountant gets records they can actually review.</span></li>
         </ul>
       </div>
+      <p class="wrap compact-disclaimer">Jezki is a record-keeping tool. It suggests categories; you and your accountant decide tax treatment.</p>
     </section>
 
-    <section class="section boundary" aria-labelledby="boundary-title">
-      <div class="wrap boundary-grid">
+    <section class="section boundary" id="privacy" aria-labelledby="privacy-title">
+      <div class="wrap split-intro">
         <div>
-          <p class="eyebrow">Clear boundaries</p>
-          <h2 id="boundary-title">Helpful, never overconfident.</h2>
+          <p class="eyebrow">Private by default</p>
+          <h2 id="privacy-title">Your receipts stay yours.</h2>
         </div>
         <div>
-          <p>Jezki organises private expense evidence and suggests fields for your review. It <strong>does not provide tax advice</strong>, decide what can be deducted, take the place of an accountant or adviser, validate records with a tax authority, guarantee savings, or file records on its own.</p>
-          <p>Production Gmail access, final support contact details, and final public URLs remain gated until the required verification and owner approval are complete.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section faq" id="faq" aria-labelledby="faq-title">
-      <div class="wrap faq-grid">
-        <div>
-          <p class="eyebrow">First questions</p>
-          <h2 id="faq-title">The useful answers, up front.</h2>
-        </div>
-        <div class="faq-list">
-          <details><summary>Does Jezki need an account?</summary><p>No. The current app is designed to work locally without a mandatory account or backend service.</p></details>
-          <details><summary>Can Jezki read my email?</summary><p>Current builds use a local Gmail test mode only. Any future production inbox discovery must be optional, transparent, pausable, disconnectable, and verified before release.</p></details>
-          <details><summary>Does Jezki file expenses for me?</summary><p>No. Every possible record waits for your review, and exports happen only when you create and share them.</p></details>
-          <details><summary>Where can I get support?</summary><p>The owner-approved support destination is still pending. The support page documents the available in-app controls and current boundaries.</p></details>
+          <p class="section-lede">No account needed. Nothing leaves your iPhone until you choose to export it.</p>
+          <a class="text-link" href="privacy.html">Read the privacy policy</a>
         </div>
       </div>
     </section>
 
     <section class="closing" aria-label="Jezki carrying a bundle of receipts through a flower meadow">
       <picture aria-hidden="true">
+        <source srcset="assets/jezki-hero-wide-night.png" media="(max-width: 700px)">
         <source srcset="assets/jezki-hero-wide-night.png" media="(prefers-color-scheme: dark)">
         <img src="assets/jezki-hero-wide-day.png" alt="" width="1920" height="1080" loading="lazy">
       </picture>
     </section>
 
-    <section class="closing-cta" aria-labelledby="closing-title">
+    <section class="closing-cta" id="download" aria-labelledby="closing-title">
       <div class="wrap closing-cta-inner">
         <div>
-          <p class="eyebrow">Meet the queue keeper</p>
-          <h2 id="closing-title">Jezki gathers the proof. You review every detail.</h2>
+          <p class="eyebrow">Tax time, minus the shoebox shame</p>
+          <h2 id="closing-title">Jezki has your receipts. You have better things to do.</h2>
         </div>
-        <a class="button dark-button" href="support.html">Explore support</a>
+        <a class="store-link store-link-dark" href="#app-store" aria-label="Jezki for iPhone. App Store link coming soon.">
+          <img src="assets/jezki-icon.png" alt="" width="48" height="48">
+          <span><small>Download on the</small><strong>App Store</strong><em>Coming soon</em></span>
+        </a>
       </div>
     </section>
   </main>
@@ -205,14 +173,14 @@
           <img src="assets/jezki-icon.png" alt="" width="44" height="44">
           <span>Jezki</span>
         </a>
-        <p>From receipt chaos to ready for review.</p>
+        <p>Snap it. Sort it. Send it.</p>
       </div>
       <nav aria-label="Footer">
-        <a href="#how-it-works">How it works</a>
+        <a href="#screens">See the app</a>
         <a href="privacy.html">Privacy</a>
         <a href="support.html">Support</a>
       </nav>
-      <p class="footer-note">Owner-review material. Final support destination, hosted text, and production URL remain pending owner approval.</p>
+      <p class="footer-note">Jezki organises records and suggests categories. It does not provide tax advice or decide what you can claim.</p>
     </div>
   </footer>
 </body>
