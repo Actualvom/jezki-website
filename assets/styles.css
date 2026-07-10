@@ -36,6 +36,7 @@ html {
 
 body {
   margin: 0;
+  overflow-x: hidden;
   background: var(--paper);
   color: var(--ink);
   font-family: var(--sans);
@@ -471,6 +472,7 @@ h3 {
 
 .screen-row img {
   width: 100%;
+  height: auto;
   border: 1px solid rgba(255, 255, 255, .26);
   border-radius: 8px;
   box-shadow: 0 24px 60px rgba(0, 0, 0, .3);
@@ -905,14 +907,14 @@ h3 {
   .hero {
     height: auto;
     min-height: 0;
-    padding-top: 245px;
+    padding-top: 220px;
     background: var(--paper);
     color: var(--ink);
   }
 
   .hero-media,
   .hero-media img {
-    height: 245px;
+    height: 220px;
   }
 
   .hero-media img {
@@ -1011,17 +1013,36 @@ h3 {
   }
 
   .screen-row {
-    display: flex;
-    align-items: flex-end;
+    display: grid;
+    grid-template-columns: none;
+    grid-auto-flow: column;
+    grid-auto-columns: minmax(260px, 86%);
+    align-items: start;
     gap: 12px;
     overflow-x: auto;
-    padding: 26px 4px 14px;
+    overscroll-behavior-inline: contain;
+    padding: 12px 2px 18px;
+    scroll-padding-inline: 2px;
     scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .screen-row::-webkit-scrollbar {
+    display: none;
   }
 
   .screen-row figure {
-    flex: 0 0 72%;
-    scroll-snap-align: center;
+    width: 100%;
+    min-width: 0;
+    scroll-snap-align: start;
+  }
+
+  .screen-row img {
+    width: 100%;
+    aspect-ratio: 590 / 1277;
+    object-fit: cover;
+    object-position: top;
   }
 
   .screen-row figure:nth-child(2) {
@@ -1053,7 +1074,24 @@ h3 {
   }
 
   .page-hero {
-    min-height: 390px;
+    min-height: 0;
+    display: block;
+    padding-top: 220px;
+  }
+
+  .page-hero picture,
+  .page-hero::after {
+    inset: 0 0 auto;
+    height: 220px;
+  }
+
+  .page-hero picture img {
+    object-position: 68% 52%;
+  }
+
+  .page-hero .wrap {
+    padding-top: 28px;
+    padding-bottom: 34px;
   }
 
   .page-hero h1 {
@@ -1066,6 +1104,32 @@ h3 {
 }
 
 @media (max-width: 430px) {
+  .hero {
+    padding-top: 210px;
+  }
+
+  .hero-media,
+  .hero-media img {
+    height: 210px;
+  }
+
+  .page-hero {
+    padding-top: 210px;
+  }
+
+  .page-hero picture,
+  .page-hero::after {
+    height: 210px;
+  }
+
+  h1 {
+    font-size: 44px;
+  }
+
+  .hero-promise {
+    font-size: 28px;
+  }
+
   .hero-actions {
     display: grid;
   }
@@ -1085,6 +1149,10 @@ h3 {
   .showcase-points li {
     grid-template-columns: 1fr;
     gap: 2px;
+  }
+
+  .screen-row {
+    grid-auto-columns: minmax(248px, 88%);
   }
 }
 
