@@ -3,10 +3,10 @@
 The static marketing, support, and privacy site for **Jezki**, a private
 expense-evidence app for iPhone.
 
-> **Jezki** — from *ježko*, Slavic for "little hedgehog." A careful creature
-> that gathers scattered things onto its back and curls up to keep them safe.
-> That is the product: it gathers scattered expense proof, keeps it local and
-> private, and files nothing until you approve it.
+> **Jezki** is a small, capable hedgehog with the air of a slightly overworked
+> studio assistant. Receipts caught in his quills turn a familiar mess into the
+> product story: gather the proof, review every detail, export only what you
+> approve.
 
 This repository contains **only the website**. The native SwiftUI iOS app lives
 in a separate private repository and is not included here.
@@ -14,23 +14,29 @@ in a separate private repository and is not included here.
 ## Pages
 
 - `index.html` — home. The product story: gather → review → export, plus the
-  local-first privacy model and the "what Jezki does not do" boundary.
+  local-first privacy model, the "what Jezki does not do" boundary, and a short
+  FAQ for first questions.
 - `support.html` — plain support page (data controls, exports, Gmail test-mode,
   owner-review support-contact status).
 - `privacy.html` — plain-language privacy policy.
-- `assets/styles.css` — the full design system (warm paper, espresso ink,
-  honey-amber accent, protective pine band, editorial serif + system sans).
+- `assets/styles.css` — the full responsive design system shared with the app's
+  cobalt, coral, mint, sky, and deep-green palette.
+- `assets/jezki-hero-day.png` / `assets/jezki-hero-night.png` — adaptive raster
+  brand artwork.
 - `assets/jezki-icon.png` — app icon / favicon.
 
 ## Design
 
-- Hand-authored inline **SVG** for the hedgehog mascot and all illustration —
-  no mascot image files, no icon kits.
+- Tactile raster artwork for the mascot and story scenes, with a dedicated
+  moonlit asset selected by `prefers-color-scheme`.
 - **No external dependencies**: no web fonts / font CDNs, no analytics, no
   tracking pixels, no third-party scripts. A privacy-facing site that phones
   nobody home. (System fonts + a local paper-grain data-URI only.)
 - Mobile-first, responsive, accessible (semantic landmarks, skip link, visible
   focus states, `prefers-reduced-motion` respected, alt text).
+- CSS-only theming, including a full `prefers-color-scheme: dark` palette and
+  the matching night illustration. No motion is required to understand or use
+  the site.
 
 ## Local preview
 

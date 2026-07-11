@@ -41,24 +41,24 @@ optional progressive enhancement (currently none). Preview with
 
 The redesign's whole idea is a mascot that **is** the product promise:
 
-> **Jezki = ježko**, Slavic for "little hedgehog." A hedgehog gathers scattered
-> things onto its back (quills) and curls into a ball to guard them. Jezki
-> gathers scattered expense proof and keeps it private until you approve it.
+> **Jezki** is the mascot and product name. He is a small, capable hedgehog who
+> gathers scattered expense proof in his quills and keeps it private until you
+> approve it. Use "Jezki" consistently in user-facing copy.
 
 Design language (all defined as CSS variables in `assets/styles.css`):
 
-- **Palette:** warm oat paper `#f6efe2`, espresso ink `#241c16`, signature
-  honey-amber `#d18a3a` (CTAs/emphasis), protective pine `#234339` (privacy
-  band), quill browns `#6a5138` / `#3c2d1e`, tiny berry accent `#a5324e`.
+- **Palette:** clean sky paper `#f5fbff`, deep green ink `#063b32`, vivid
+  cobalt `#0d55dc`, coral `#f35159`, mint `#18a97d`, sky blue `#83cfff`, and
+  honey amber `#f0a92e`. Natural quill browns remain inside the art rather than
+  dominating the interface.
 - **Type:** editorial serif for display/voice (`Iowan Old Style, Palatino,
   Georgia, serif`), system sans for body/UI. No web fonts (privacy + no CDNs).
-- **Art:** hand-authored inline SVG — the hedgehog logo (quills include a
-  receipt slip), a hero "gathering" scene (scattered slips → onto the back →
-  tidy export pack), a curled-ball privacy illustration, a sealed export pack,
-  and custom line icons. No external images or icon kits.
-- **Voice:** warm and a little playful ("Gather the scattered. Keep it
-  private.", "One quiet burrow for scattered proof.", "A hedgehog never
-  rushes") — but precise, never overclaiming.
+- **Art:** local tactile raster imagery for a daytime meadow and a moonlit dark
+  mode scene. Jezki is expressive and stylised, but not babyish or photoreal.
+  Receipts caught in his quills carry the product metaphor immediately.
+- **Voice:** warm, direct, and precise. The primary promise is "From receipt
+  chaos to ready for review." Supporting copy says "Jezki gathers the proof.
+  You review every detail."
 - Mobile-first, accessible (skip link, semantic landmarks, visible focus,
   `prefers-reduced-motion`, alt text), no horizontal scroll.
 
@@ -104,21 +104,25 @@ records"** (the past-tense "filed" avoids the regex on purpose).
 
 ## 5. What is done / not done
 
-**Done:** full redesign of all three pages + CSS, hedgehog identity, hero and
-privacy/export illustrations, responsive + accessible, all guardrails honored,
-pushed to this public GitHub repo.
+**Done:** full redesign of all three pages + CSS, tactile day/night Jezki art,
+the app's broader cobalt/coral/mint palette, responsive + accessible structure,
+all guardrails honored, home FAQ, and discoverable navigation.
 
 **Not done / owner-gated (need Jordy's explicit approval):**
 - Final support-contact destination and final production URLs.
 - Custom domain / final site name and production Netlify deploy.
 - Any App Store submission action.
 
+**Latest owner-review deploy:**
+`https://6a5010549c7c4402ceb1138c--jezki.netlify.app`
+
+This is a draft deploy only. It did not replace the production site at
+`https://www.jezki.com`.
+
 ## 6. Good next steps (suggestions, not commitments)
 
-- Refine the hedgehog SVG paths (it was authored without visual feedback —
-  check curves on a real screen and adjust).
-- Optional light motion polish (respect `prefers-reduced-motion`).
-- Consider a subtle dark-mode via `prefers-color-scheme` using the same tokens.
+- Keep polishing with real-screen checks: image crops, spacing, and contrast
+  passes are more useful than adding new surfaces.
 - Once Jordy approves hosted text + contact + URL, wire the real support
   destination and deploy to the chosen production host.
 - Keep verifying: serve locally, check mobile + desktop widths, no console
